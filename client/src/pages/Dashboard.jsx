@@ -21,7 +21,7 @@ export default function Dashboard() {
 
       {!user && (
         <p className="rounded-2xl border border-white/70 bg-white/70 p-6 text-sm text-slate">
-          Sign in to see your enrollments.
+          Signzz in to see your enrollments.
         </p>
       )}
 

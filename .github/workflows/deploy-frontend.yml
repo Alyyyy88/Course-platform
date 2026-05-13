@@ -6,12 +6,12 @@ on:
       - main
     paths:
       - "client/**"
-      - "netlify.toml"
 
 jobs:
   build-and-deploy:
-    name: Build & Deploy
+    name: Add SPA Redirect Rule
     runs-on: ubuntu-latest
+
 
     steps:
       - name: Checkout repository
@@ -28,6 +28,9 @@ jobs:
         working-directory: client
         run: npm ci
 
+            
+      - name: Add SPA Redirect Rule
+        run: echo "/* /index.html 200" > client/dist/_redirects
       - name: Build
         working-directory: client
         run: npm run build
