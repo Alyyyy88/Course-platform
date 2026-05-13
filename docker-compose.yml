@@ -16,5 +16,33 @@ services:
       timeout: 5s
       retries: 10
 
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: course_platform_backend
+    ports:
+      - "4000:4000"
+    environment:
+      DATABASE_URL: postgresql://postgres:password@postgres:5432/course_platform
+      JWT_SECRET: changeme_supersecret_jwt_key
+      PORT: 4000
+      NODE_ENV: production
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: course_platform_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
 volumes:
   course_platform_data:
