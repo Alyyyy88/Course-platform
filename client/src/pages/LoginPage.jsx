@@ -25,7 +25,7 @@ export default function LoginPage() {
 
   return (
     <section className="mx-auto max-w-lg rounded-3xl border border-white/70 bg-white/80 p-8 shadow-[0_20px_50px_rgba(15,23,42,0.1)]">
-      <h1 className="font-display text-3xl text-ink">Welcome back</h1>
+      <h1 className="font-display text-3xl text-ink">Welcome back TSETTT</h1>
       <p className="mt-2 text-sm text-slate">
         Sign in to enroll and track your courses.
       </p>
