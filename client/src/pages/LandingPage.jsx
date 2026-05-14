@@ -33,7 +33,7 @@ export default function LandingPage() {
           </p>
           <div className="mt-6 grid grid-cols-3 gap-3 text-center text-xs uppercase tracking-[0.18em]">
             <div className="rounded-2xl bg-ink px-3 py-4 text-white">
-              18 hrs
+              18 hrsz
             </div>
             <div className="rounded-2xl border border-ink/10 px-3 py-4 text-ink">
               6 projects
