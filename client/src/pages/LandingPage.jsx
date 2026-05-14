@@ -29,7 +29,7 @@ export default function LandingPage() {
             <span>Starts monthly</span>
           </div>
           <p className="mt-4 text-base text-ink">
-            Join guided learning circles with built-in accountability.
+            test6
           </p>
           <div className="mt-6 grid grid-cols-3 gap-3 text-center text-xs uppercase tracking-[0.18em]">
             <div className="rounded-2xl bg-ink px-3 py-4 text-white">
