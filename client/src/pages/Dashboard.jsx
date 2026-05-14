@@ -15,7 +15,7 @@ export default function Dashboard() {
       <div className="rounded-3xl border border-white/70 bg-white/70 p-8">
         <h1 className="font-display text-3xl text-ink">Student dashboard</h1>
         <p className="mt-2 text-sm text-slate">
-          Track every course you are enrollezz in.
+          Trackz every course you are enrollezz in.
         </p>
       </div>
 
